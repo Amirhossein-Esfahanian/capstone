@@ -107,3 +107,22 @@ img.hero {
 }
 
 /* ---highlight end---- */
+/* ---testimonials---- */
+#testimonials {
+  background-color: #495e57;
+  padding: 50px 0;
+}
+#testimonials h2 {
+  color: #edefee;
+}
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.74);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(255, 255, 255, 0.52);
+}
+
+/* ---testimonials end---- */
