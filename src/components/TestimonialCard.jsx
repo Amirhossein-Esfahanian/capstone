@@ -4,7 +4,7 @@ export default function TestimonialCard({ rate, title, description, image }) {
   const percent = 20 * rate;
   const progress = `${percent}%`;
   return (
-    <div className="card m-2 glass" style={{ width: "100%" }}>
+    <div className="card m-2 glass">
       <div className="card-body">
         <h6 className="card-title text-center rating">Rate</h6>
         <div className="progress mb-4">

@@ -47,8 +47,9 @@
 /* ---hero---- */
 
 #hero {
-  height: 800px;
+  /* height: 800px; */
   background-color: #495e57;
+  padding-bottom: 50px;
 }
 .section {
   margin-bottom: 120px;
@@ -73,12 +74,23 @@ h5.hero {
   text-align: justify;
   margin-bottom: 40px;
 }
-.pt-200 {
-  padding-top: 200px;
+@media screen and (min-width: 770px) {
+  .pt-200 {
+    padding-top: 200px;
+  }
 }
 
-img.hero {
-  border-radius: 50px;
+@media screen and (min-width: 770px) {
+  img.hero {
+    border-radius: 50px;
+    right: -180px;
+    bottom: -150px;
+  }
+}
+@media screen and (max-width: 770px) {
+  img.hero {
+    display: none;
+  }
 }
 
 .btn-hero {

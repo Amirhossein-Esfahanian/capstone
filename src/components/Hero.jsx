@@ -18,8 +18,7 @@ export default function Hero() {
             src={require("../image/f5.png")}
             alt="slider with logo and text"
             width="100%"
-            className="hero position-relative "
-            style={{ right: "-180px" }}
+            className="hero position-relative hero-image"
           />
         </div>
       </article>

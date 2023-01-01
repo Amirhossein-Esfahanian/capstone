@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card({ title, price, description, image }) {
   return (
-    <div className="card ms-2 me-2">
+    <div className="card ms-2 me-2 mt-2">
       <img src={image} className="card-img-top" alt="..." />
       <div className="card-body ">
         <div className="d-flex justify-content-between">
