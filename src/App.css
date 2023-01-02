@@ -44,9 +44,35 @@
   grid-auto-rows: minmax(150px, auto);
 } */
 
+.menu {
+  width: 11rem;
+  height: 3.3rem;
+  background-color: #edefee;
+  color: #285314;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 200%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 4px 0px;
+}
+.menu :hover {
+  width: 11rem;
+  height: 3.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  background-color: #285314;
+  color: #edefee !important;
+  line-height: 200%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 4px 0px;
+}
 /* ---hero---- */
 
-#hero {
+#hero,
+#footer {
   /* height: 800px; */
   background-color: #495e57;
   padding-bottom: 50px;
@@ -138,3 +164,56 @@ h5.hero {
 }
 
 /* ---testimonials end---- */
+/* ---about---- */
+h1.about {
+  color: #111;
+  margin-bottom: 20px;
+  font-size: 350%;
+  font-weight: 900;
+  font-family: "Markazi Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2.about {
+  color: #333;
+  font-size: 250%;
+  margin-bottom: 50px;
+}
+h5.about {
+  color: #777;
+  font-size: 140%;
+  max-width: 350px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+img.about1 {
+  margin-left: 35%;
+  /* margin-top: 0%; */
+}
+img.about2 {
+  margin-left: 70%;
+  margin-top: -80%;
+}
+@media screen and (max-width: 770px) {
+  img.about1 {
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  img.about2 {
+    margin-left: 40%;
+    margin-top: -90%;
+  }
+}
+
+/* ---about end---- */
+
+.list-group-header {
+  color: whitesmoke;
+}
+.list-group-item {
+  background-color: transparent;
+  padding-left: 2px;
+}
+.list-group-item > a {
+  color: whitesmoke;
+  text-decoration: none;
+}
