@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+
+const handleClick = (anchor) => () => {
+  const id = `${anchor}`;
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+    });
+  }
+};
 
 export default function Navbar() {
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="#">
           <img
             src={require("../image/logo_colored.png")}
             alt="Little lemon logo"
@@ -12,9 +24,9 @@ export default function Navbar() {
             height="80"
             className="d-inline-block align-text-top"
           />
-        </a>
+        </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo02"
@@ -22,45 +34,50 @@ export default function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-items-end">
             <li className="nav-item menu me-2">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="#"
+                onClick={handleClick("hero")}
+              >
                 <i className="fa fa-home me-2"></i>
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item menu me-2">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="#" onClick={handleClick("about")}>
                 <i className="fa fa-question me-2"></i>
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item menu me-2">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="#">
                 <i className="fa fa-list me-2"></i>
                 Menu
-              </a>
+              </Link>
             </li>
             <li className="nav-item menu me-2">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="#">
                 <i className="fa fa-clock me-2"></i>
                 Reservation
-              </a>
+              </Link>
             </li>
             <li className="nav-item menu me-2">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="#">
                 <i className="fa fa-book me-2"></i>
                 Order Online
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="nav-link menu " href="#">
+              <Link className="nav-link menu " to="#">
                 <i className="fa fa-user me-2"></i>
                 Login
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

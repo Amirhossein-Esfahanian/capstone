@@ -3,7 +3,7 @@ import Card from "./HighlightCard";
 
 export default function Highlight() {
   return (
-    <section className="section">
+    <section id="highlight" className="section">
       <article className="d-flex container-fluid col-md-8 justify-content-between pt-4 pb-4">
         <h2>Special</h2>
         <button className="btn btn-hero">ONLINE MENU</button>
